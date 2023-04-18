@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.site-layout .site-layout-background {
+  padding: 24px;
+  min-height: 280px;
+  transition: margin-left 0.2s ease-out;
+}
+
+.site-layout .ant-menu-inline-collapsed .site-layout-background {
+  margin-left: 80px;
+}
+
+.site-layout .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: transparent;
+}
+
+.app-logo {
+  height: 32px;
+  margin: 16px;
+  text-align: center;
+}
+

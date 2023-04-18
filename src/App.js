@@ -56,71 +56,63 @@ function App() {
         </Header>
         
         <Content style={{ margin: '0 16px' }}>
-  <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-      <div style={{ display: 'flex', gap: 16 }}>
-        <div>
-          <label htmlFor="input-1">Input №1</label>
-          <Input id="input-1" />
-        </div>
-        <div>
-          <label htmlFor="input-2">Input №2</label>
-          <InputNumber id="input-2" />
-        </div>
-        <div>
-          <label htmlFor="input-3">Input №3</label>
-          <DatePicker id="input-3" />
-        </div>
-        <div>
-          <label htmlFor="input-4">Input №4</label>
-          <TimePicker id="input-4" />
-        </div>
-      </div>
-      <div style={{ display: 'flex', gap: 16 }}>
-        <div>
-          <label htmlFor="input-5">Input №5</label>
-          <Input id="input-5" />
-        </div>
-        <div>
-          <label htmlFor="input-6">Input №6</label>
-          <InputNumber id="input-6" />
-        </div>
-        <div>
-          <label htmlFor="input-7">Input №7</label>
-          <DatePicker id="input-7" />
-        </div>
-        <div>
-          <label htmlFor="input-8">Input №8</label>
-          <TimePicker id="input-8" />
-        </div>
-      </div>
-      <div style={{ display: 'flex', gap: 16 }}>
-        <div>
-          <label htmlFor="input-9">Input №9</label>
-          <Input id="input-9" />
-        </div>
-        <div>
-          <label htmlFor="input-10">Input №10</label>
-          <InputNumber id="input-10" />
-        </div>
-        <div>
-          <label htmlFor="input-11">Input №11</label>
-          <DatePicker id="input-11" />
-        </div>
-        <div>
-          <label htmlFor="input-12">Input №12</label>
-          <TimePicker id="input-12" />
-        </div>
-      </div>
-      <div style={{ display: 'flex', gap: 16 }}>
-        <div>
-          <label htmlFor="input-switch">Switch</label>
-          <Switch id="input-switch" />
-        </div>
-      </div>
-    </div>
-  </div>
-</Content>
+              <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+                <div className="inputs-container">
+                  <div className="input-row">
+                    <label htmlFor="input-1-1">Input №1</label>
+                    <Input id="input-1-1" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-1-2">Input №2</label>
+                    <InputNumber id="input-1-2" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-1-3">Input №3</label>
+                    <DatePicker id="input-1-3" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-1-4">Input №4</label>
+                    <TimePicker id="input-1-4" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-2-1">Input №5</label>
+                    <Input id="input-2-1" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-2-2">Input №6</label>
+                    <InputNumber id="input-2-2" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-2-3">Input №7</label>
+                    <DatePicker id="input-2-3" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-2-4">Input №8</label>
+                    <TimePicker id="input-2-4" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-3-1">Input №9</label>
+                    <Input id="input-3-1" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-3-2">Input №10</label>
+                    <InputNumber id="input-3-2" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-3-3">Input №11</label>
+                    <DatePicker id="input-3-3" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-3-4">Input №12</label>
+                    <TimePicker id="input-3-4" />
+                  </div>
+                  <div className="input-row">
+                    <label htmlFor="input-switch">Switch</label>
+                    <Switch id="input-switch" />
+                  </div>
+                </div>
+              </div>
+        </Content>
         
 
         <Footer style={{ textAlign: 'center' }}>

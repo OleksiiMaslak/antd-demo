@@ -32,3 +32,27 @@ code {
   text-align: center;
 }
 
+.inputs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+}
+
+div#input-1-2,
+div#input-2-2,
+div#input-3-2 {
+  max-width: 100px !important;
+}
+.input-row:not(:has(#input-1-2, #input-2-2, #input-3-2)) {
+  width: 23%;
+}
+
+.ant-switch{
+  width: 50px;
+}

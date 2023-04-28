@@ -59,7 +59,7 @@ const defaultExpandable = {
 const defaultTitle = () => 'Here is title';
 const defaultFooter = () => 'Here is footer';
 const SiteForm = () => {
-  const [bordered, setBordered] = useState(false);
+  const [bordered, setBordered] = useState(true);
   const [loading, setLoading] = useState(false);
   const [size, setSize] = useState('large');
   const [expandable, setExpandable] = useState(defaultExpandable);

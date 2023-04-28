@@ -2,7 +2,7 @@
 import SiteSider from './components/Sider';
 import SiteHeader from './components/Header';
 import SiteForm from './components/Form';
-import SiteInputs from './components/Inputs';
+import ComponentWithInputs from './components/ComponentWithInputs';
 
 
 import { Layout } from 'antd';
@@ -21,7 +21,7 @@ function App() {
           <SiteHeader />
           
           <Content style={{ margin: '0 16px' }}>
-                <SiteInputs />
+                <ComponentWithInputs />
                         
             <SiteForm />
         

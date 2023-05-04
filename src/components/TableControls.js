@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Select, Button, Input } from 'antd';
+import { FormOutlined, DiffOutlined, ContainerOutlined, LockOutlined, RollbackOutlined} from '@ant-design/icons';
 
 const { Option } = Select;
 
@@ -40,28 +41,39 @@ setSearchValue('');
 setData(data);
 };
 
-return (
-<div style={{ display: 'flex', alignItems: 'center', marginBottom: 16 }}>
-<Select value={selectValue} onChange={handleSelectChange} style={{ marginRight: 16 }}>
-<Option value="20">20</Option>
-<Option value="25">25</Option>
-<Option value="30">30</Option>
-<Option value="35">35</Option>
-<Option value="40">40</Option>
-</Select>
-<Button style={{ marginRight: 16 }} icon={<span className="icon-style icon-1"></span>} onClick={() => handleButtonClick('#e91e63')}></Button>
-<Button style={{ marginRight: 16 }} icon={<span className="icon-style icon-2"></span>} onClick={() => handleButtonClick('#9e9e9e')}></Button>
-<Button style={{ marginRight: 16 }} icon={<span className="icon-style icon-3"></span>} onClick={() => handleButtonClick('#00bcd4')}></Button>
-<Button style={{ marginRight: 16 }} icon={<span className="icon-style icon-4"></span>} onClick={() => handleButtonClick('#4caf50')}></Button>
-<Input
-placeholder="Search"
-value={searchValue}
-onChange={handleSearchChange}
-onPressEnter={handleSearchSubmit}
-style={{ width: 200, marginRight: 16 }}
-/>
-<Button onClick={handleSearchClear}>Clear</Button>
-
+    return (
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
+  <div style={{ display: 'flex', alignItems: 'center' }}>
+    <Select value={selectValue} onChange={handleSelectChange} style={{ marginRight: 16 }}>
+      <Option value="20">20</Option>
+      <Option value="25">25</Option>
+      <Option value="30">30</Option>
+      <Option value="35">35</Option>
+      <Option value="40">40</Option>
+    </Select>
+    <Button style={{ marginRight: 5, backgroundColor: '#19bb19', padding: 5 }} onClick={() => handleButtonClick('#e91e63')}>
+      <FormOutlined style={{ fontSize: 15, color: '#fff'}} />
+    </Button>
+    <Button style={{ marginRight: 5, backgroundColor: '#e91e63', padding: 5 }} onClick={() => handleButtonClick('#9e9e9e')}>
+      <DiffOutlined style={{ fontSize: 15, color: '#fff'}} />
+    </Button>
+    <Button style={{ marginRight: 5, backgroundColor: '#bcc90c', padding: 5 }} onClick={() => handleButtonClick('#00bcd4')}>
+      <ContainerOutlined style={{ fontSize: 15, color: '#fff'}} />
+    </Button>
+    <Button style={{ marginRight: 5, backgroundColor: '#1a61e6', padding: 5 }} onClick={() => handleButtonClick('#4caf50')}>
+      <LockOutlined style={{ fontSize: 15, color: '#fff'}} />
+    </Button>
+    <Button style={{ marginRight: 5, backgroundColor: '#6d6d6d', padding: 5 }} onClick={handleSearchClear}>
+      <RollbackOutlined style={{ fontSize: 15, color: '#fff'}} />
+    </Button>
+  </div>
+  <Input
+    placeholder="Search"
+    value={searchValue}
+    onChange={handleSearchChange}
+    onPressEnter={handleSearchSubmit}
+    style={{ width: 200, marginLeft: 16 }}
+  />
 </div>
 );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Table, Switch, Select } from 'antd';
+import TableControls from './TableControls';
 const { Option } = Select;
 
 const data = [
@@ -253,14 +254,15 @@ const SiteForm = () => {
   ];
 
   return (
-    <>
+    <div style={{ backgroundColor: '#fff', margin: '25px', padding: '25px' }}>
+      <TableControls/>
       <Table
         dataSource={data}
         columns={columns}
         scroll={{ x: 1570 }}
-        style={{ backgroundColor: '#fff', margin: '25px', padding: '25px' }}
+        
       />
-    </>
+    </div>
 );
 };
 
